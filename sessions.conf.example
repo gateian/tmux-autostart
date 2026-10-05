@@ -1,0 +1,14 @@
+# tmux sessions to create at boot. Copy this file to sessions.conf and edit it;
+# sessions.conf is ignored by git so your own projects stay out of the repo.
+#
+# Format:  <session-name>  <project-dir>  [command]
+#   - project-dir may use ~ or $HOME
+#   - command is optional; when omitted, Claude is started with
+#     "--continue" and falls back to a fresh session if there is nothing to continue.
+#     Remote Control (/rc) is enabled, named after the session.
+#   - Use "-" as the command for a plain shell.
+
+myapp      ~/projects/myapp
+website    ~/projects/website
+devserver  ~/projects/website      npm run dev
+scratch    ~                       -
